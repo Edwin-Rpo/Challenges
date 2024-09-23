@@ -5,15 +5,15 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
 
-        Cliente cliente = new Cliente(1, "Edwin", "Restrepo", LocalDate.of(1990, 12, 12), "Calle 123", "123456");
+        Cliente cliente = new Cliente(1, "Edwin", "Restrepo", LocalDate.of(1987, 12, 23), "Calle 123", "123456");
         Administrador admin = new Administrador(2, "Juan", "Perez", LocalDate.of(1985, 5, 20), "Calle 456", "654321", "SuperAdmin");
         GestorDeViajes gestor = new GestorDeViajes(3, "Maria", "Gomez", LocalDate.of(1992, 8, 15), "Calle 789", "789456", "ViajesExpress");
 
-        cliente.agregarDestino("Roma");
-        cliente.agregarDestino("Berlín");
+        cliente.agregarDestino("Madrid");
+        cliente.agregarDestino("Francia");
 
-        Viaje viaje1 = new Viaje(1, "Roma");
-        Viaje viaje2 = new Viaje(2, "Berlín");
+        Viaje viaje1 = new Viaje(1, "Madrid");
+        Viaje viaje2 = new Viaje(2, "Francia");
         Proveedor proveedor1 = new Proveedor(1, "Airbnb");
         Proveedor proveedor2 = new Proveedor(2, "Booking");
 
